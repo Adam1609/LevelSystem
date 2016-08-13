@@ -35,11 +35,11 @@ class Eventlistener implements Listener
 		$name = $player->getName();
 		if(!$this->ls->isRegist($name))
 		{
-			$player->sendMessage($this->message["ls"]."はじめまして, ".$name."さん");
-			$player->sendMessage($this->message["ls"].$name."さんのデータを作成しました");
+			$player->sendMessage($this->message["ls"]."Rất vui khi được gặp bạn, ".$name."Chúc bạn vui vẻ trong server!");
+			$player->sendMessage($this->message["ls"].$name."Dữ liệu của bạn đã được tạo thành công!");
 			$this->ls->registUser($name);
 		}else{
-			$player->sendMessage($this->message["ls"]."ようこそ, ".$name. "さん");
+			$player->sendMessage($this->message["ls"]."Chào mừng quay trở lại, ".$name. "Chúc bạn vui vẻ!");
 		}
 	}
 
@@ -69,11 +69,11 @@ class Eventlistener implements Listener
 				$this->ls->addLevel($dmname, $pl);
 				$this->ls->setExp($dmname, $ndmexp);
 				$this->ls->setLevelUpExp($dmname, $dmluexp);
-				$damager->sendMessage($this->message["ls"].$dename."を倒してExpを".$gexp."手に入れた");
+				$damager->sendMessage($this->message["ls"].$dename."Bạn nhận được ".$gexp."kinh nghiệm!");
 				if($pl > 0)
 				{
 					$level = $dmlevel + $pl;
-					$this->ls->getServer()->broadcastMessage($this->message["ls"].$dmname."がLevelUp! ".$dmlevel."→".$level);
+					$this->ls->getServer()->broadcastMessage($this->message["ls"].$dmname."Bạn đã được thăng từ cấp ".$dmlevel."→".$level);
 				}
 			}
 		}
