@@ -1,3 +1,4 @@
 # LevelSystem
-このプラグインを利用し損害,不具合が生じても開発者は一切責任を取りません<br>
-それを理解したうえで利用してください
+Bring another Level System to your Server
+Support all software like: Phoenix, Genisys, ImagicalMine, PocketMine-PHP7
+
