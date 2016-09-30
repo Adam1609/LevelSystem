@@ -69,11 +69,11 @@ class Eventlistener implements Listener
 				$this->ls->addLevel($dmname, $pl);
 				$this->ls->setExp($dmname, $ndmexp);
 				$this->ls->setLevelUpExp($dmname, $dmluexp);
-				$damager->sendMessage($this->message["ls"].$dename."Bạn nhận được ".$gexp."kinh nghiệm!");
+				$damager->sendMessage($this->message["ls"].$dename." nhận được ".$gexp."kinh nghiệm!");
 				if($pl > 0)
 				{
 					$level = $dmlevel + $pl;
-					$this->ls->getServer()->broadcastMessage($this->message["ls"].$dmname."Bạn đã được thăng từ cấp ".$dmlevel."→".$level);
+					$this->ls->getServer()->broadcastMessage($this->message["ls"].$dmname." đã được thăng từ cấp ".$dmlevel."→".$level);
 				}
 			}
 		}
